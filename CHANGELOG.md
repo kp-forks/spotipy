@@ -11,21 +11,29 @@ Add your changes below.
 
 ### Added
 
+### Fixed
+
+### Removed
+
+## [2.25.1] - 2025-02-27
+
+### Added
+
 - Added examples for audiobooks, shows and episodes methods to examples directory
-- Use newer string formatters (https://pyformat.info)
-- Marked `recommendation_genre_seeds` as deprecated
 
 ### Fixed
 
 - Fixed scripts in examples directory that didn't run correctly
 - Updated documentation for `Client.current_user_top_artists` to indicate maximum number of artists limit
+- Set auth cache file permissions to `600`: https://github.com/spotipy-dev/spotipy/security/advisories/GHSA-pwhh-q4h6-w599
 
 ### Changed
 
 - Updated get_cached_token and save_token_to_cache methods to utilize Python's Context Management Protocol
 - Added except clause to get_cached_token method to handle json decode errors
-
-### Removed
+- Added warnings and updated docs due to Spotify's deprecation of HTTP and "localhost" redirect URIs
+- Use newer string formatters (<https://pyformat.info>)
+- Marked `recommendation_genre_seeds` as deprecated
 
 ## [2.25.0] - 2025-03-01
 
